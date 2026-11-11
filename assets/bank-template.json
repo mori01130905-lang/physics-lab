@@ -1,0 +1,118 @@
+{
+  "id": "my-physics-bank",
+  "version": 1,
+  "title": "大学物理",
+  "subtitle": "我的题库",
+  "updatedAt": "2026-01-01",
+  "chapters": [
+    {
+      "id": "ch1",
+      "number": 1,
+      "title": "第一章 质点运动学",
+      "intro": "用一句话说明本章学什么。",
+      "knowledge": [
+        {
+          "id": "k1-1",
+          "title": "位置、速度与加速度",
+          "summary": "本知识点的核心结论，用一两句话概括。",
+          "formulas": [
+            {
+              "tex": "v=\\frac{dx}{dt}",
+              "note": "速度是位置对时间的导数"
+            },
+            {
+              "tex": "a=\\frac{dv}{dt}",
+              "note": "加速度是速度对时间的导数"
+            }
+          ],
+          "points": [
+            "用 Markdown 写讲解，公式用 `$...$` 包裹，例如 $v=v_0+at$。",
+            "支持 **加粗**、列表、引用和表格。"
+          ],
+          "pitfalls": [
+            "列出学生最容易犯的错误。",
+            "例如：把位移的大小直接当成路程。"
+          ],
+          "examples": [
+            {
+              "question": "一道例题：质点沿 $x$ 轴运动，$x=2t^2$，求 $t=1$ 时的速度。",
+              "solution": "求导得 $v=4t$，代入 $t=1$，得 $v=4\\,\\text{m/s}$。"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "single",
+          "difficulty": 1,
+          "stem": "单选题题干，公式用 $...$ 包裹。",
+          "options": [
+            { "id": "A", "text": "选项 A" },
+            { "id": "B", "text": "选项 B" },
+            { "id": "C", "text": "选项 C" },
+            { "id": "D", "text": "选项 D" }
+          ],
+          "answer": ["A"],
+          "explanation": "详细解析：说明为什么 A 对，其他选项错在哪里。",
+          "knowledge": ["k1-1"],
+          "similar": {
+            "question": "可选的举一反三题；不填也可以，AI 会生成。",
+            "hint": "一句提示",
+            "solution": "简要解析"
+          }
+        },
+        {
+          "id": "q2",
+          "type": "multiple",
+          "difficulty": 2,
+          "stem": "多选题题干。",
+          "options": [
+            { "id": "A", "text": "选项 A" },
+            { "id": "B", "text": "选项 B" },
+            { "id": "C", "text": "选项 C" }
+          ],
+          "answer": ["A", "C"],
+          "explanation": "详细解析。",
+          "knowledge": ["k1-1"]
+        },
+        {
+          "id": "q3",
+          "type": "blank",
+          "difficulty": 1,
+          "stem": "填空题：第一个空填 ____，第二个空填 ____。",
+          "blanks": [
+            {
+              "label": "第一个空",
+              "answers": ["答案", "可接受的等价写法"],
+              "unit": ""
+            },
+            {
+              "label": "第二个空",
+              "answers": ["2", "2.0"],
+              "unit": "m/s"
+            }
+          ],
+          "explanation": "详细解析。",
+          "knowledge": ["k1-1"]
+        },
+        {
+          "id": "q4",
+          "type": "calc",
+          "difficulty": 3,
+          "stem": "计算题题干。求：(1) ...；(2) ...。",
+          "answer": {
+            "reference": "参考答案与最终结果，可写 LaTeX。",
+            "rubric": [
+              "写出所用公式",
+              "代入数据并说明初值",
+              "结果与单位正确"
+            ]
+          },
+          "explanation": "详细解析，讲清关键步骤和易错点。",
+          "knowledge": ["k1-1"]
+        }
+      ]
+    }
+  ]
+}

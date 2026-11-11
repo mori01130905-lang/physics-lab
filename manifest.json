@@ -1,0 +1,14 @@
+{
+  "name": "物理 · 刷题室",
+  "short_name": "物理刷题",
+  "description": "大学物理章节刷题、AI 批改、错题重刷与薄弱点总结",
+  "start_url": "./index.html#/home",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4f1ea",
+  "theme_color": "#141a24",
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
