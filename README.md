@@ -4,8 +4,8 @@
 
 当前已把文件夹里的 **2026 秋大学物理 A** 资料整理进网站：**12 章、193 道题、49 个知识点**。题目来自 `题库/` 下的题库精选、作业题和参考答案；知识点来自 `知识点/` 下的 PPT、教学进度表和复习纲要，并补充了第 11 章（稳恒磁场）的详细讲解。
 
-> **在线版（30 天临时）：** <https://my-dimuexbxzo.brewpage.app/>  
-> 平板直接打开这个网址即可，不需要电脑。到期时间 2026-12-11；长期使用建议部署到 Netlify / Cloudflare Pages / GitHub Pages。
+> **在线版（永久）：** <https://mori01130905-lang.github.io/physics-lab/>  
+> 已部署在 GitHub Pages，平板直接打开即可，不需要电脑，也不需要服务器。
 >
 > **不想联网？** 用根目录的 `offline.html`：CSS、JS、字体、题库全部打包在一个文件里，拷到平板后用 Safari / Chrome 打开即可，不需要 Python，也不需要电脑一直开着。
 
@@ -259,9 +259,13 @@ node content/build.js
 node content/build-standalone.js
 ```
 
-### 方式 B：固定网址（推荐长期用）
+### 方式 B：固定网址（已部署）
 
-把 `物理刷题室.zip` 解压后的整个文件夹拖到 Netlify Drop、Cloudflare Pages 或 GitHub Pages，得到一个 `https://...` 地址。之后平板直接打开这个地址，电脑可以完全关机。
+当前固定地址：<https://mori01130905-lang.github.io/physics-lab/>
+
+GitHub 仓库：<https://github.com/mori01130905-lang/physics-lab>
+
+之后平板直接打开这个地址，电脑可以完全关机。要更新内容时，重新生成 `assets/data/bank.js` 和 `offline.html`，把改动推到仓库的 `main` 分支即可。
 
 ---
 
